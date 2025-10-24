@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first web</title>
+    <style>
+        body{
+            background: linear-gradient(
+                to right, #ff9a9e, 
+                #fad0c4, #a1c4fd);
+            }
+        .todo-app{
+            width: 98%;
+            height: 500px;
+            background-color: #ffff;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-left: 1%;
+            box-sizing: border-box;
+        }
+        .title{
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            padding-top: 30px;
+            
+        }
+        .todo-from{
+            display: flex;
+            margin-left: 30px;
+        }
+        .todo-input{
+            padding-left: 15px;
+            border: 1px solid #dfe1e5;
+            outline: none;
+            width: 60%;
+            height: 40px;
+            margin-top: 15px;
+            border-radius: 20px 0 0 20px;
+            margin-bottom: 20px;
+
+        }
+        .todo-button{
+            background: linear-gradient(
+                to right, #ff9a9e, 
+                #fad0c4, #a1c4fd);
+            width: 10%;
+            height: 44px;
+            margin-top: 15px;
+            border-radius: 0 20px 20px 0;
+            text-align: center;
+            line-height: 44px;
+            font-size: 12px;
+            color: #ffff;
+            cursor: pointer;
+            user-select: none;
+            
+            
+
+        }
+        .item{
+            display: flex;
+            border-radius: 20px 20px 20px 20px;
+            box-sizing: border-box;
+            width: 80%;
+            height: 50px;
+            margin: 8px auto;
+            padding: 16px;
+            box-shadow: rgba(149,157,165,0.2)0px 8px 20px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap; /* 禁止换行 */
+            overflow: hidden; 
+        }
+        .todo-thing{
+            display: flex;
+        }
+        .del{
+            color: red;
+        }
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+
+        
+            
+    </style>
+</head>
+<body>
+    <div class="todo-app">
+        <div class="title">kiki的Todo App</div>
+        <div class="todo-from">
+            <input class="todo-input" type="text" placeholder="add a todo" />
+            <div class="todo-button">add todo</div>
+        </div>
+        <div class="item completed">
+            <div class="todo-thing">
+            <input type="checkbox">
+            <div class="name">学习AI全栈开发</div>
+            </div>
+            <div class="del">del</div>
+            
+        </div>
+        <div class="item">
+            <div class="todo-thing">
+            <input type="checkbox">
+            <div class="name">学习python</div>
+            </div>
+            <div class="del">del</div>
+            
+        </div>
+        <div class="item">
+            <div class="todo-thing">
+            <input type="checkbox">
+            <div class="name">学习c语言</div>
+            </div>
+            <div class="del">del</div>
+            
+        </div>
+        
+        
+        
+        
+    </div>
+    
+</body>
+</html>
